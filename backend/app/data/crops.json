@@ -1,0 +1,590 @@
+[
+  {
+    "id": "rice",
+    "name": "Rice",
+    "scientific_name": "Oryza sativa",
+    "category": "Cereal",
+    "compatible_soil_types": ["Clay", "Clay Loam", "Alluvial Soil", "Loam", "Black Soil"],
+    "soil_ph_range": {
+      "min": 5.0,
+      "max": 8.0,
+      "optimal_min": 6.0,
+      "optimal_max": 7.2
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 38.0,
+      "optimal_min": 22.0,
+      "optimal_max": 32.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 900.0,
+      "max": 2500.0,
+      "optimal_min": 1200.0,
+      "optimal_max": 1800.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 55.0,
+      "max": 95.0,
+      "optimal_min": 70.0,
+      "optimal_max": 88.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 70.0, "max": 160.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 25.0, "max": 65.0, "unit": "mg/kg" },
+      "potassium": { "min": 35.0, "max": 90.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif", "Zaid"],
+    "irrigation_considerations": "Requires standing water (2-5 cm) during vegetative tillering phase. High water requirement; requires assured irrigation or heavy monsoon rainfall.",
+    "water_requirement_level": "High",
+    "regional_applicability": ["West Bengal", "Uttar Pradesh", "Punjab", "Andhra Pradesh", "Telangana", "Tamil Nadu", "Odisha", "Bihar", "Assam", "Chhattisgarh"],
+    "description": "Primary staple cereal of India, thriving in humid, warm climates with clay or alluvial soil capable of holding water.",
+    "data_source": "ICAR - National Rice Research Institute (NRRI); TNAU Agritech Portal",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Standard lowland puddle-transplanted rice. Rainfall ranges assume cumulative monsoon growing season precipitation."
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "scientific_name": "Triticum aestivum",
+    "category": "Cereal",
+    "compatible_soil_types": ["Loam", "Clay Loam", "Alluvial Soil", "Black Soil", "Sandy Loam"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 8.4,
+      "optimal_min": 6.5,
+      "optimal_max": 7.5
+    },
+    "temperature_range": {
+      "min": 8.0,
+      "max": 28.0,
+      "optimal_min": 14.0,
+      "optimal_max": 22.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 250.0,
+      "max": 800.0,
+      "optimal_min": 350.0,
+      "optimal_max": 600.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 35.0,
+      "max": 75.0,
+      "optimal_min": 45.0,
+      "optimal_max": 65.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 90.0, "max": 160.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 35.0, "max": 65.0, "unit": "mg/kg" },
+      "potassium": { "min": 25.0, "max": 65.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Rabi"],
+    "irrigation_considerations": "Requires 4-6 critical irrigations, especially at Crown Root Initiation (CRI), tillering, and grain development stages.",
+    "water_requirement_level": "Moderate",
+    "regional_applicability": ["Uttar Pradesh", "Punjab", "Haryana", "Madhya Pradesh", "Rajasthan", "Bihar", "Gujarat"],
+    "description": "Essential winter rabi cereal requiring cool climate during vegetative growth and warm conditions during grain filling.",
+    "data_source": "ICAR - Indian Institute of Wheat and Barley Research (IIWBR)",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Rabi crop. Temperatures exceeding 30°C during grain filling can induce terminal heat stress."
+  },
+  {
+    "id": "maize",
+    "name": "Maize",
+    "scientific_name": "Zea mays",
+    "category": "Cereal",
+    "compatible_soil_types": ["Sandy Loam", "Loam", "Clay Loam", "Alluvial Soil", "Black Soil"],
+    "soil_ph_range": {
+      "min": 5.5,
+      "max": 8.0,
+      "optimal_min": 6.0,
+      "optimal_max": 7.2
+    },
+    "temperature_range": {
+      "min": 16.0,
+      "max": 36.0,
+      "optimal_min": 21.0,
+      "optimal_max": 30.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 450.0,
+      "max": 1100.0,
+      "optimal_min": 600.0,
+      "optimal_max": 850.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 45.0,
+      "max": 85.0,
+      "optimal_min": 55.0,
+      "optimal_max": 75.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 80.0, "max": 150.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 35.0, "max": 70.0, "unit": "mg/kg" },
+      "potassium": { "min": 30.0, "max": 65.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif", "Rabi", "Zaid"],
+    "irrigation_considerations": "Extremely sensitive to both waterlogging and drought during tasseling and silking stages. Requires good soil drainage.",
+    "water_requirement_level": "Moderate",
+    "regional_applicability": ["Karnataka", "Madhya Pradesh", "Maharashtra", "Telangana", "Andhra Pradesh", "Rajasthan", "Bihar", "Uttar Pradesh"],
+    "description": "Versatile cereal crop grown across multiple seasons, highly productive under well-drained fertile loam soils.",
+    "data_source": "ICAR - Indian Institute of Maize Research (IIMR); FAO",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Highly responsive to nitrogen; poor tolerance to standing water."
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "scientific_name": "Gossypium hirsutum",
+    "category": "Fiber",
+    "compatible_soil_types": ["Black Soil", "Clay Loam", "Loam", "Alluvial Soil", "Sandy Loam"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 8.5,
+      "optimal_min": 6.5,
+      "optimal_max": 8.0
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 39.0,
+      "optimal_min": 24.0,
+      "optimal_max": 34.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 450.0,
+      "max": 1200.0,
+      "optimal_min": 600.0,
+      "optimal_max": 900.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 40.0,
+      "max": 80.0,
+      "optimal_min": 50.0,
+      "optimal_max": 70.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 70.0, "max": 140.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 25.0, "max": 60.0, "unit": "mg/kg" },
+      "potassium": { "min": 35.0, "max": 85.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif"],
+    "irrigation_considerations": "Requires warm days and sunny weather; deep taproot extracts moisture; boll opening requires dry sunny conditions.",
+    "water_requirement_level": "Moderate",
+    "regional_applicability": ["Gujarat", "Maharashtra", "Telangana", "Andhra Pradesh", "Rajasthan", "Punjab", "Haryana", "Karnataka"],
+    "description": "Major commercial fiber crop suited for black cotton soil (Regur) and well-drained loams in semi-arid tracts.",
+    "data_source": "ICAR - Central Institute for Cotton Research (CICR)",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Needs frost-free season of at least 180-200 days."
+  },
+  {
+    "id": "groundnut",
+    "name": "Groundnut",
+    "scientific_name": "Arachis hypogaea",
+    "category": "Oilseed",
+    "compatible_soil_types": ["Sandy Loam", "Loam", "Red Soil", "Sandy", "Alluvial Soil"],
+    "soil_ph_range": {
+      "min": 5.5,
+      "max": 7.8,
+      "optimal_min": 6.0,
+      "optimal_max": 7.2
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 36.0,
+      "optimal_min": 24.0,
+      "optimal_max": 32.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 400.0,
+      "max": 900.0,
+      "optimal_min": 500.0,
+      "optimal_max": 750.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 45.0,
+      "max": 80.0,
+      "optimal_min": 55.0,
+      "optimal_max": 70.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 15.0, "max": 45.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 35.0, "max": 80.0, "unit": "mg/kg" },
+      "potassium": { "min": 35.0, "max": 80.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif", "Zaid", "Rabi"],
+    "irrigation_considerations": "Requires loose, well-drained soil for easy peg penetration and pod development. Heavy clay hampers harvesting and pod formation.",
+    "water_requirement_level": "Moderate",
+    "regional_applicability": ["Gujarat", "Andhra Pradesh", "Tamil Nadu", "Karnataka", "Rajasthan", "Maharashtra", "Telangana"],
+    "description": "Crucial oilseed and legume crop fixing biological nitrogen and flourishing in friable sandy loam soils.",
+    "data_source": "ICAR - Directorate of Groundnut Research (DGR); ICRISAT",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Being a legume, nitrogen requirement from soil is modest due to rhizobial fixation."
+  },
+  {
+    "id": "pearl_millet",
+    "name": "Pearl Millet (Bajra)",
+    "scientific_name": "Pennisetum glaucum",
+    "category": "Millet",
+    "compatible_soil_types": ["Sandy", "Sandy Loam", "Red Soil", "Loam", "Black Soil"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 8.6,
+      "optimal_min": 6.5,
+      "optimal_max": 8.2
+    },
+    "temperature_range": {
+      "min": 20.0,
+      "max": 42.0,
+      "optimal_min": 27.0,
+      "optimal_max": 36.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 200.0,
+      "max": 650.0,
+      "optimal_min": 300.0,
+      "optimal_max": 500.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 25.0,
+      "max": 70.0,
+      "optimal_min": 35.0,
+      "optimal_max": 60.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 30.0, "max": 80.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 15.0, "max": 45.0, "unit": "mg/kg" },
+      "potassium": { "min": 15.0, "max": 45.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif", "Zaid"],
+    "irrigation_considerations": "Extremely drought-tolerant C4 cereal. Capable of surviving in low-rainfall arid environments where other cereals fail.",
+    "water_requirement_level": "Low",
+    "regional_applicability": ["Rajasthan", "Uttar Pradesh", "Gujarat", "Haryana", "Maharashtra", "Karnataka", "Madhya Pradesh"],
+    "description": "Hardy, climate-resilient nutrimillet ideal for drought-prone, light sandy soils with minimal irrigation.",
+    "data_source": "ICAR - All India Coordinated Research Project on Pearl Millet; ICRISAT",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Optimal for dryland farming; avoid waterlogged soils."
+  },
+  {
+    "id": "sorghum",
+    "name": "Sorghum (Jowar)",
+    "scientific_name": "Sorghum bicolor",
+    "category": "Millet",
+    "compatible_soil_types": ["Black Soil", "Clay Loam", "Loam", "Sandy Loam", "Red Soil"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 8.5,
+      "optimal_min": 6.5,
+      "optimal_max": 7.8
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 40.0,
+      "optimal_min": 25.0,
+      "optimal_max": 34.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 350.0,
+      "max": 850.0,
+      "optimal_min": 450.0,
+      "optimal_max": 650.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 30.0,
+      "max": 75.0,
+      "optimal_min": 40.0,
+      "optimal_max": 65.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 50.0, "max": 110.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 20.0, "max": 50.0, "unit": "mg/kg" },
+      "potassium": { "min": 25.0, "max": 55.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif", "Rabi"],
+    "irrigation_considerations": "High drought resistance due to deep root system and waxy leaf coating. 1-2 protective irrigations drastically boost rabi yields.",
+    "water_requirement_level": "Low",
+    "regional_applicability": ["Maharashtra", "Karnataka", "Rajasthan", "Andhra Pradesh", "Telangana", "Madhya Pradesh", "Tamil Nadu"],
+    "description": "Major drought-resilient cereal cultivated for both human food grain and nutritious livestock stover fodder.",
+    "data_source": "ICAR - Indian Institute of Millets Research (IIMR); ICRISAT",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Well suited to rainfed Deccan plateau clay soils (Vertisols)."
+  },
+  {
+    "id": "chickpea",
+    "name": "Chickpea (Bengal Gram)",
+    "scientific_name": "Cicer arietinum",
+    "category": "Pulse",
+    "compatible_soil_types": ["Loam", "Clay Loam", "Black Soil", "Sandy Loam", "Alluvial Soil"],
+    "soil_ph_range": {
+      "min": 6.0,
+      "max": 8.4,
+      "optimal_min": 6.5,
+      "optimal_max": 7.6
+    },
+    "temperature_range": {
+      "min": 10.0,
+      "max": 30.0,
+      "optimal_min": 16.0,
+      "optimal_max": 25.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 200.0,
+      "max": 600.0,
+      "optimal_min": 300.0,
+      "optimal_max": 450.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 25.0,
+      "max": 65.0,
+      "optimal_min": 35.0,
+      "optimal_max": 55.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 15.0, "max": 40.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 30.0, "max": 70.0, "unit": "mg/kg" },
+      "potassium": { "min": 20.0, "max": 45.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Rabi"],
+    "irrigation_considerations": "Primarily grown on conserved residual soil moisture. Excess moisture or heavy winter rains cause root rot and excessive vegetative growth.",
+    "water_requirement_level": "Low",
+    "regional_applicability": ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Uttar Pradesh", "Karnataka", "Andhra Pradesh", "Gujarat"],
+    "description": "Leading Indian rabi pulse providing high protein, improving soil fertility through atmospheric nitrogen fixation.",
+    "data_source": "ICAR - Indian Institute of Pulses Research (IIPR); ICRISAT",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Cool dry winter climate essential. Frost during flowering causes severe flower drop."
+  },
+  {
+    "id": "pigeon_pea",
+    "name": "Pigeon Pea (Arhar / Red Gram)",
+    "scientific_name": "Cajanus cajan",
+    "category": "Pulse",
+    "compatible_soil_types": ["Loam", "Sandy Loam", "Clay Loam", "Black Soil", "Red Soil", "Alluvial Soil"],
+    "soil_ph_range": {
+      "min": 5.5,
+      "max": 8.0,
+      "optimal_min": 6.2,
+      "optimal_max": 7.5
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 38.0,
+      "optimal_min": 24.0,
+      "optimal_max": 32.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 450.0,
+      "max": 1000.0,
+      "optimal_min": 600.0,
+      "optimal_max": 800.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 40.0,
+      "max": 80.0,
+      "optimal_min": 50.0,
+      "optimal_max": 70.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 15.0, "max": 45.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 35.0, "max": 75.0, "unit": "mg/kg" },
+      "potassium": { "min": 20.0, "max": 50.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif"],
+    "irrigation_considerations": "Deep taproot enables strong drought tolerance once established. Highly susceptible to water stagnation; requires well-drained fields.",
+    "water_requirement_level": "Low",
+    "regional_applicability": ["Maharashtra", "Karnataka", "Madhya Pradesh", "Uttar Pradesh", "Gujarat", "Telangana", "Andhra Pradesh"],
+    "description": "Crucial long-duration kharif pulse crop essential for protein nutrition in Indian diets, often intercropped with cereals.",
+    "data_source": "ICAR - Indian Institute of Pulses Research (IIPR); ICRISAT",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Needs good drainage; stagnant water for even 24-48 hours causes root mortality."
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "scientific_name": "Glycine max",
+    "category": "Oilseed",
+    "compatible_soil_types": ["Black Soil", "Clay Loam", "Loam", "Sandy Loam", "Alluvial Soil"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 7.8,
+      "optimal_min": 6.3,
+      "optimal_max": 7.2
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 35.0,
+      "optimal_min": 23.0,
+      "optimal_max": 30.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 550.0,
+      "max": 1100.0,
+      "optimal_min": 650.0,
+      "optimal_max": 850.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 50.0,
+      "max": 85.0,
+      "optimal_min": 60.0,
+      "optimal_max": 78.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 20.0, "max": 50.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 40.0, "max": 90.0, "unit": "mg/kg" },
+      "potassium": { "min": 30.0, "max": 65.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif"],
+    "irrigation_considerations": "Typically grown rainfed during kharif monsoon. Moisture stress during flowering and pod development causes significant yield drop.",
+    "water_requirement_level": "Moderate",
+    "regional_applicability": ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Karnataka", "Telangana", "Gujarat"],
+    "description": "High-value dual-purpose oilseed and legume crop widespread across central India's black soil belt.",
+    "data_source": "ICAR - Indian Institute of Soybean Research (IISR)",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Thrives in well-drained fertile black soils (Vertisols) with good organic content."
+  },
+  {
+    "id": "mustard",
+    "name": "Mustard (Rapeseed)",
+    "scientific_name": "Brassica juncea",
+    "category": "Oilseed",
+    "compatible_soil_types": ["Sandy Loam", "Loam", "Clay Loam", "Alluvial Soil"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 8.2,
+      "optimal_min": 6.2,
+      "optimal_max": 7.5
+    },
+    "temperature_range": {
+      "min": 8.0,
+      "max": 28.0,
+      "optimal_min": 15.0,
+      "optimal_max": 22.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 200.0,
+      "max": 550.0,
+      "optimal_min": 300.0,
+      "optimal_max": 450.0,
+      "unit": "mm",
+      "reference_period": "Growing Season"
+    },
+    "humidity_range": {
+      "min": 35.0,
+      "max": 75.0,
+      "optimal_min": 45.0,
+      "optimal_max": 65.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 50.0, "max": 100.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 25.0, "max": 60.0, "unit": "mg/kg" },
+      "potassium": { "min": 25.0, "max": 50.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Rabi"],
+    "irrigation_considerations": "Requires light irrigations; flowering and pod development stages are critical. High humidity encourages white rust or aphid infestation.",
+    "water_requirement_level": "Low",
+    "regional_applicability": ["Rajasthan", "Haryana", "Madhya Pradesh", "Uttar Pradesh", "West Bengal", "Gujarat", "Assam"],
+    "description": "Premier rabi edible oilseed crop grown widely in northern and western India with modest water requirements.",
+    "data_source": "ICAR - Directorate of Rapeseed-Mustard Research (DRMR)",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Cool winter nights with clear sunny days produce higher oil content."
+  },
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "scientific_name": "Saccharum officinarum",
+    "category": "Cash Crop",
+    "compatible_soil_types": ["Clay Loam", "Loam", "Black Soil", "Alluvial Soil"],
+    "soil_ph_range": {
+      "min": 5.8,
+      "max": 8.2,
+      "optimal_min": 6.5,
+      "optimal_max": 7.8
+    },
+    "temperature_range": {
+      "min": 18.0,
+      "max": 39.0,
+      "optimal_min": 25.0,
+      "optimal_max": 35.0,
+      "unit": "°C"
+    },
+    "rainfall_range": {
+      "min": 1000.0,
+      "max": 2400.0,
+      "optimal_min": 1200.0,
+      "optimal_max": 1800.0,
+      "unit": "mm",
+      "reference_period": "Annual"
+    },
+    "humidity_range": {
+      "min": 55.0,
+      "max": 90.0,
+      "optimal_min": 65.0,
+      "optimal_max": 82.0,
+      "unit": "%"
+    },
+    "npk_ranges": {
+      "nitrogen": { "min": 120.0, "max": 250.0, "unit": "mg/kg" },
+      "phosphorus": { "min": 45.0, "max": 95.0, "unit": "mg/kg" },
+      "potassium": { "min": 70.0, "max": 160.0, "unit": "mg/kg" }
+    },
+    "growing_seasons": ["Kharif", "Zaid", "Rabi"],
+    "irrigation_considerations": "Long-duration (10-14 months) heavy consumer of water. Needs continuous irrigation every 8-12 days during formative and summer periods.",
+    "water_requirement_level": "Very High",
+    "regional_applicability": ["Uttar Pradesh", "Maharashtra", "Karnataka", "Tamil Nadu", "Andhra Pradesh", "Gujarat", "Bihar"],
+    "description": "High-biomass perennial industrial crop producing sugar and ethanol, requiring abundant irrigation and high nutrient supply.",
+    "data_source": "ICAR - Indian Institute of Sugarcane Research (IISR)",
+    "reference_date": "2024-03",
+    "is_verified_agronomic": true,
+    "assumptions_and_notes": "Annual water requirement is high (1500-2000 mm). High sucrose accumulation occurs during cool, dry ripening."
+  }
+]

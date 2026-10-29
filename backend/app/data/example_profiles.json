@@ -1,0 +1,157 @@
+[
+  {
+    "id": "profile_rice_delta",
+    "name": "1. Rice-Oriented Delta Region (Kharif Monsoon)",
+    "description": "High-rainfall, humid coastal delta with clay loam soil, representative of Godavari/Krishna/Cauvery or Bengal plains during Kharif.",
+    "expected_outcome": "Rice (Oryza sativa) should achieve top compatibility (>85%). Drought-tolerant crops like Pearl Millet and Chickpea should register significant climate/season mismatches.",
+    "input_data": {
+      "location": {
+        "country": "India",
+        "state": "Andhra Pradesh",
+        "district": "East Godavari",
+        "season": "Kharif",
+        "irrigation": "Irrigated"
+      },
+      "soil": {
+        "soil_type": "Clay Loam",
+        "soil_ph": 6.8,
+        "nitrogen": 110.0,
+        "phosphorus": 45.0,
+        "potassium": 60.0,
+        "is_measured": true
+      },
+      "environment": {
+        "temperature": 29.0,
+        "rainfall": 1450.0,
+        "rainfall_period": "Growing Season",
+        "relative_humidity": 82.0,
+        "sunlight_hours": 6.5,
+        "is_measured": true
+      }
+    }
+  },
+  {
+    "id": "profile_pearl_millet_arid",
+    "name": "2. Millet-Oriented Semi-Arid Zone (Dryland Kharif)",
+    "description": "Low-rainfall, sandy loam dryland in western India (Rajasthan/Gujarat) with warm temperatures and low humidity.",
+    "expected_outcome": "Pearl Millet (Bajra) and Sorghum should rank at the top (>85%). Water-intensive crops (Rice, Sugarcane) should be flagged as severe mismatches.",
+    "input_data": {
+      "location": {
+        "country": "India",
+        "state": "Rajasthan",
+        "district": "Jodhpur",
+        "season": "Kharif",
+        "irrigation": "Rainfed"
+      },
+      "soil": {
+        "soil_type": "Sandy Loam",
+        "soil_ph": 7.6,
+        "nitrogen": 45.0,
+        "phosphorus": 25.0,
+        "potassium": 35.0,
+        "is_measured": true
+      },
+      "environment": {
+        "temperature": 32.5,
+        "rainfall": 380.0,
+        "rainfall_period": "Growing Season",
+        "relative_humidity": 45.0,
+        "sunlight_hours": 8.5,
+        "is_measured": true
+      }
+    }
+  },
+  {
+    "id": "profile_chickpea_rabi_pulse",
+    "name": "3. Pulse-Oriented Cool Winter Zone (Rabi Central India)",
+    "description": "Cool winter climate in Madhya Pradesh/Maharashtra on vertisol black soil with low residual winter moisture.",
+    "expected_outcome": "Chickpea (Bengal Gram) and Wheat should achieve highest suitability. Kharif-specific crops (Pigeon Pea, Rice, Cotton) will show season incompatibility.",
+    "input_data": {
+      "location": {
+        "country": "India",
+        "state": "Madhya Pradesh",
+        "district": "Ujjain",
+        "season": "Rabi",
+        "irrigation": "Rainfed"
+      },
+      "soil": {
+        "soil_type": "Black Soil",
+        "soil_ph": 7.4,
+        "nitrogen": 28.0,
+        "phosphorus": 50.0,
+        "potassium": 38.0,
+        "is_measured": true
+      },
+      "environment": {
+        "temperature": 19.5,
+        "rainfall": 310.0,
+        "rainfall_period": "Growing Season",
+        "relative_humidity": 48.0,
+        "sunlight_hours": 7.5,
+        "is_measured": true
+      }
+    }
+  },
+  {
+    "id": "profile_missing_npk",
+    "name": "4. Missing NPK Soil Lab Data (Kharif Deccan Plateau)",
+    "description": "Farmer has basic field observations (Black soil, warm monsoon climate) but has not yet conducted laboratory soil NPK testing.",
+    "expected_outcome": "The engine excludes NPK weights from the score denominator, reports ~70% data coverage, and evaluates Cotton, Soybean, and Maize without penalizing missing soil test kits.",
+    "input_data": {
+      "location": {
+        "country": "India",
+        "state": "Maharashtra",
+        "district": "Nagpur",
+        "season": "Kharif",
+        "irrigation": "Irrigated"
+      },
+      "soil": {
+        "soil_type": "Black Soil",
+        "soil_ph": 7.1,
+        "nitrogen": null,
+        "phosphorus": null,
+        "potassium": null,
+        "is_measured": false
+      },
+      "environment": {
+        "temperature": 27.5,
+        "rainfall": 780.0,
+        "rainfall_period": "Growing Season",
+        "relative_humidity": 68.0,
+        "sunlight_hours": 6.0,
+        "is_measured": true
+      }
+    }
+  },
+  {
+    "id": "profile_insufficient_data",
+    "name": "5. Conflicting or Insufficient Information",
+    "description": "Only state and season provided, with soil type unknown, missing pH, missing rainfall, and extreme temperature (47°C).",
+    "expected_outcome": "Engine detects data coverage is well below minimum 35% threshold and flags an Insufficient Data advisory with a list of missing essential factors.",
+    "input_data": {
+      "location": {
+        "country": "India",
+        "state": "Telangana",
+        "district": null,
+        "season": "Zaid",
+        "irrigation": "Unknown"
+      },
+      "soil": {
+        "soil_type": "Unknown",
+        "soil_ph": null,
+        "nitrogen": null,
+        "phosphorus": null,
+        "potassium": null,
+        "is_measured": false
+      },
+      "environment": {
+        "temperature": 47.0,
+        "rainfall": null,
+        "rainfall_period": "Growing Season",
+        "relative_humidity": null,
+        "sunlight_hours": null,
+        "is_measured": false
+      }
+    }
+  }
+]
